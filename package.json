@@ -1,0 +1,54 @@
+{
+    "name": "dsh-archive-button",
+    "version": "0.1.0",
+    "description": "DSH session archive button: an icon button portaled into the sidebar's workspace-title row (right next to the official Add-workspace icon), falling back to an inline footer capsule when that row is not mounted. First click dry-runs a scan of DSH sessions idle for more than 3 days, second click packs each one into a byte-verified zip under <DSH 安装根>\\archive\\dsh-sessions and removes the original folder. Host half registers /dsh-archive/* routes and runs archive-dsh-sessions.ps1; client half renders the button. Never triggered by the model.",
+    "type": "module",
+    "main": "lib/index.js",
+    "exports": {
+        ".": {
+            "default": "./lib/index.js"
+        },
+        "./client": {
+            "default": "./lib/client.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "dsh": {
+        "bundle": {
+            "patch": "./cordis.patch.yml"
+        },
+        "client": {
+            "inject": [
+                "@deepseek-ai/dsh-client-ui-sidebar"
+            ],
+            "platform": "web"
+        }
+    },
+    "peerDependencies": {
+        "@deepseek-ai/cordis": "^4.0.1",
+        "react": "^18.2.0"
+    },
+    "files": [
+        "lib",
+        "cordis.patch.yml",
+        "README.md"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "dsh",
+        "deepseek-harness",
+        "plugin",
+        "archive",
+        "sessions",
+        "sidebar"
+    ],
+    "author": "Ln1m (https://github.com/Ln1m)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ln1m/dsh-archive-button.git"
+    },
+    "homepage": "https://github.com/Ln1m/dsh-archive-button#readme",
+    "bugs": {
+        "url": "https://github.com/Ln1m/dsh-archive-button/issues"
+    }
+}
