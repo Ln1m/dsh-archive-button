@@ -2,7 +2,7 @@
 
 [中文](README.md) · English
 
-![Archive and restart buttons, including the two-click confirm state](assets/dsh-archive-button.png)
+![Archive button in the sidebar workspace row](assets/dsh-archive-button.png)
 
 *Screenshot of a running DSH instance; demo content is sanitized.*
 

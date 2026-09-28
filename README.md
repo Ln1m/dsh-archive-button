@@ -2,7 +2,7 @@
 
 [English](README.en.md) · 中文
 
-![归档按钮与重启按钮（含两击确认态）界面实拍](assets/dsh-archive-button.png)
+![左栏工作区行的归档按钮界面实拍](assets/dsh-archive-button.png)
 
 *界面实拍：截自本机运行中的 DSH 实例，示例内容已脱敏。*
 
