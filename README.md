@@ -2,9 +2,9 @@
 
 [English](README.en.md) · 中文
 
-![归档按钮与重启按钮（含两击确认态）界面示意](assets/dsh-archive-button-restart-button.png)
+![归档按钮与重启按钮（含两击确认态）界面实拍](assets/dsh-archive-button.png)
 
-*界面示意：按官方主题变量渲染的版式，非实机截图。*
+*界面实拍：截自本机运行中的 DSH 实例，示例内容已脱敏。*
 
 侧栏工作区标题行上的归档按钮（工作区标题行没挂载时回落到 footer 胶囊）。第一次点先空跑扫描，列出空闲超过 3 天的会话；第二次点把每个会话打包成逐字节校验的 zip，并删掉原目录。host 半端注册 `/dsh-archive/*` 路由并调归档脚本，client 半端只画按钮。模型不会触发它。
 
