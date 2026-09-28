@@ -1,6 +1,6 @@
 # dsh-archive-button
 
-> This branch is the vk-free build: official slots only, no vk reference anywhere. The dual-path version is on [https://github.com/Ln1m/dsh-archive-button/tree/main](https://github.com/Ln1m/dsh-archive-button/tree/main).
+> This branch is the **vk-free build**: official slots only, no vk slot references; identical behaviour with or without dsh-vk-suite. The vk build is on the [main branch](https://github.com/Ln1m/dsh-archive-button/tree/main).
 
 [中文](README.md) · English
 
@@ -27,7 +27,7 @@ Restart the web instance afterwards.
 ## Requirements
 
 - Windows PowerShell 5.1
-- The button registers in the official `sidebar.footer.action` slot
+- Seat: the official `sidebar.footer.action`
 - The archive script ships with this repo (`scripts/archive-dsh-sessions.ps1`) and works as installed
 - The bundled script wins; `<DSH_ROOT>\scripts\archive-dsh-sessions.ps1` is the fallback
 - A session folder is deleted only after its zip is reopened and byte-verified

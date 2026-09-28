@@ -1,6 +1,6 @@
 # dsh-archive-button
 
-> 本分支是零 vk 版：只注册官方槽，代码里没有任何 vk 引用。双路版见 [https://github.com/Ln1m/dsh-archive-button/tree/main](https://github.com/Ln1m/dsh-archive-button/tree/main)。
+> 本分支是 **零 vk 版**：只注册官方槽，代码不引用任何 vk 槽，装不装 dsh-vk-suite 都一样。vk 版见 [main 分支](https://github.com/Ln1m/dsh-archive-button/tree/main)。
 
 [English](README.en.md) · 中文
 
@@ -27,7 +27,7 @@ dsh plugin --profile web add file:<本仓库>
 ## 前提
 
 - Windows PowerShell 5.1
-- 按钮注册在官方 `sidebar.footer.action` 槽
+- 入口槽：官方 `sidebar.footer.action`
 - 归档脚本随本仓库提供（`scripts/archive-dsh-sessions.ps1`），装完即用
 - 包内脚本优先；`<DSH_ROOT>\scripts\archive-dsh-sessions.ps1` 存在时作为回退（想用自己那份就放在那里）
 - 原会话目录只在 zip 重新打开并逐字节校验通过后才删除
