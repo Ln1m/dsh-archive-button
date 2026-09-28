@@ -1,4 +1,6 @@
-﻿# dsh-archive-button
+> A vk-free build lives on the [https://github.com/Ln1m/dsh-archive-button/tree/official](https://github.com/Ln1m/dsh-archive-button/tree/official); main is the dual-path version (official slots without vk-suite, vk layout seats with it).
+
+# dsh-archive-button
 
 [中文](README.md) · English
 
