@@ -1,4 +1,4 @@
-# dsh-archive-button
+﻿# dsh-archive-button
 
 [English](README.en.md) · 中文
 
@@ -25,6 +25,7 @@ dsh plugin --profile web add file:<本仓库>
 ## 前提
 
 - Windows PowerShell 5.1
+- 不依赖 vk-suite：装了它按钮落在 `vk.sidebar.footer` 槽，没装则落在官方 `sidebar.footer.action` 槽
 - 归档脚本随本仓库提供（`scripts/archive-dsh-sessions.ps1`），装完即用
 - 包内脚本优先；`<DSH_ROOT>\scripts\archive-dsh-sessions.ps1` 存在时作为回退（想用自己那份就放在那里）
 - 原会话目录只在 zip 重新打开并逐字节校验通过后才删除

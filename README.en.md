@@ -1,4 +1,4 @@
-# dsh-archive-button
+﻿# dsh-archive-button
 
 [中文](README.md) · English
 
@@ -25,6 +25,7 @@ Restart the web instance afterwards.
 ## Requirements
 
 - Windows PowerShell 5.1
+- No vk-suite dependency: with vk-suite the button lands in `vk.sidebar.footer`; without it, in the official `sidebar.footer.action` slot
 - The archive script ships with this repo (`scripts/archive-dsh-sessions.ps1`) and works as installed
 - The bundled script wins; `<DSH_ROOT>\scripts\archive-dsh-sessions.ps1` is the fallback
 - A session folder is deleted only after its zip is reopened and byte-verified
