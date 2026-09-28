@@ -20,9 +20,11 @@ dsh plugin --profile web add file:<本仓库>
 
 | 变量 | 默认 | 说明 |
 |---|---|---|
-| `DSH_ROOT` | `~/DeepSeek_harness` | DSH 安装根；归档脚本、归档目录、按钮日志都由它派生 |
+| `DSH_ROOT` | `~/DeepSeek_harness` | DSH 安装根；归档目录与按钮日志都由它派生 |
 
 ## 前提
 
 - Windows PowerShell 5.1
-- `<DSH_ROOT>\scripts\archive-dsh-sessions.ps1` 需自备，本仓库不含该脚本
+- 归档脚本随本仓库提供（`scripts/archive-dsh-sessions.ps1`），装完即用
+- 包内脚本优先；`<DSH_ROOT>\scripts\archive-dsh-sessions.ps1` 存在时作为回退（想用自己那份就放在那里）
+- 原会话目录只在 zip 重新打开并逐字节校验通过后才删除

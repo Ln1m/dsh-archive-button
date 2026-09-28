@@ -20,9 +20,11 @@ Restart the web instance afterwards.
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `DSH_ROOT` | `~/DeepSeek_harness` | DSH install root; the archive script, archive directory and button log are all derived from it |
+| `DSH_ROOT` | `~/DeepSeek_harness` | DSH install root; the archive directory and button log are derived from it |
 
 ## Requirements
 
 - Windows PowerShell 5.1
-- `<DSH_ROOT>\scripts\archive-dsh-sessions.ps1` must be provided by you; this repo does not ship it
+- The archive script ships with this repo (`scripts/archive-dsh-sessions.ps1`) and works as installed
+- The bundled script wins; `<DSH_ROOT>\scripts\archive-dsh-sessions.ps1` is the fallback
+- A session folder is deleted only after its zip is reopened and byte-verified
